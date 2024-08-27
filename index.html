@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo">Del Rosario</title>
+    <style>
+body {
+    background: linear-gradient(
+        to right,
+        #c5afaa 50%,#5a5050 20%
+    );
+
+        }
+        h1{ color: black;}
+        h2{ color: blueviolet;}
+        h3{ color: red}
+        h4{ color: blue;}
+
+.h1-texto{
+    background: linear-gradient(to right, 
+        #F5CBA7, red, blue, black, chocolate, orange);
+    background-clip: text;
+    color: transparent;
+    display: inline;
+    background-size: 300%;
+    animation: animated 5s linear infinite;
+    position: relative;
+}
+
+#text-title {
+    background: linear-gradient(to right, 
+        #F5CBA7, red, blue, black, chocolate, orange);
+    background-clip: text;
+    color: transparent;
+    display: inline;
+    background-size: 300%;
+    animation: animated 5s linear infinite;
+    position: relative;
+}
+#text-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Ajusta la posición vertical de la línea */
+    width: 100%;
+    height: 2px; /* Ajusta el grosor de la línea */
+    background: linear-gradient(to right, 
+        #F5CBA7, red, blue, black, chocolate, orange);
+    background-size: 300%;
+    animation: animated 5s linear infinite;
+}
+
+@keyframes animated {
+    to {
+        background-position-x: 100%;
+    }
+}
+        .img-rosario{
+            filter: drop-shadow(1px 1px 20px white);
+            border-radius: 50px;
+            position: absolute;
+            left: 1150px;
+            top: 10px;
+        }
+        .container-title{
+            border: 2px solid transparent;
+            height: 210px;
+        }
+
+.container-complet{
+    margin-top: 160px;
+    height: auto;
+}
+
+.tooltip-container {
+    border: 2px solid skyblue;
+    margin-left: 0px;
+    width:120px;
+    height: 135px;
+    margin-top: 0px;
+    position: relative;
+    background: skyblue;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+  .tooltip-container-2 {
+    border: 2px solid skyblue;
+    margin-left: 300px;
+    width: 120px;
+    height: 135px;
+    margin-top: -170px;
+    position: relative;
+    background: skyblue;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+    inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 5px 5px 5px #ffffff,
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+  .tooltip-container-3{
+    border: 2px solid skyblue;
+    margin-left: 600px;
+    width: 120px;
+    height: 135px;
+    margin-top: -166px;
+    position: relative;
+    background: skyblue;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+  .tooltip-container-4{
+    border: 2px solid green;
+    margin-left: 900px;
+    width: 120px;
+    height: 135px;
+    margin-top: -166px;
+    position: relative;
+    background: green;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+  .tooltip-container-5{
+    border: 2px solid green;
+    margin-left: 1150px;
+    width: 120px;
+    height: 135px;
+    margin-top: -166px;
+    position: relative;
+    background: green;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+  .tooltip-container-6{
+    border: 2px solid skyblue;
+    margin-left: 160px;
+    width: 120px;
+    height: 135px;
+    margin-top: 0px;
+    position: relative;
+    background: skyblue;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+  .tooltip-container-7{
+    border: 2px solid skyblue;
+    margin-left: 450px;
+    width: 120px;
+    height: 135px;
+    margin-top: -166px;
+    position: relative;
+    background: skyblue;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .tooltip-container-8{
+    border: 2px solid skyblue;
+    margin-left: 750px;
+    width: 120px;
+    height: 135px;
+    margin-top: -166px;
+    position: relative;
+    background: skyblue;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .tooltip-container-9{
+    border: 2px solid skyblue;
+    margin-left: 1050px;
+    width: 120px;
+    height: 135px;
+    margin-top: -166px;
+    position: relative;
+    background: skyblue;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .tooltip-container-10{
+    border: 2px solid #c27949;
+    margin-left: 300px;
+    width: 120px;
+    height: 135px;
+    margin-top: 0px;
+    position: relative;
+    background: #c27949;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  .tooltip-container-11{
+    border: 2px solid #c27949;
+    margin-left: 900px;
+    width: 120px;
+    height: 135px;
+    margin-top: -166px;
+    position: relative;
+    background: #c27949;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 14px 26px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  
+  .tooltip-1 {
+    margin-top: 140px;
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 180px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .tooltip-2{
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 180px;
+    margin-left: 250px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .tooltip-3 {
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 180px;
+    margin-left: -250px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .tooltip-4 {
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 500px;
+    height: auto;
+    margin-left: -300px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .tooltip-5 {
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 600px;
+    margin-left: -600px;
+    height: auto;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .tooltip-6 {
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 180px;
+    margin-left: -250px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .tooltip-7 {
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 180px;
+    margin-left: -250px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .tooltip-8 {
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 180px;
+    margin-left: -250px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .tooltip-9{
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 180px;
+    margin-left: -250px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .tooltip-10 {
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 180px;
+    margin-top: 170px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .tooltip-11 {
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 800;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 8px 8px 8px 8px;
+    background: #ffdb0f;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62),
+      inset 0px -2px 3px rgba(0, 0, 0, 0.48), inset 1px 1px 4px #ffffff,
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    min-width: 180px;
+    margin-top: 170px;
+    padding: 8px;
+    color: #ac0039;
+    font-size: 11px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .tooltip-1,
+  .tooltip-2,
+  .tooltip-3,
+  .tooltip-4,
+  .tooltip-5,
+  .tooltip-6,
+  .tooltip-7,
+  .tooltip-8,
+  .tooltip-9,
+  .tooltip-10,
+  .tooltip-11{
+    top: 0%;
+    left: 50%;
+    width: 200px;
+  }
+  .tooltip-container:hover .tooltip-1 {
+    top: -100%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container-2:hover .tooltip-2 {
+    left: -100%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container-3:hover .tooltip-3 {
+    left: 200%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container-4:hover .tooltip-4 {
+    left: 200%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container-5:hover .tooltip-5 {
+    left: 200%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container-6:hover .tooltip-6 {
+    left: 200%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container-7:hover .tooltip-7 {
+    left: 200%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container-8:hover .tooltip-8 {
+    left: 200%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container-9:hover .tooltip-9 {
+    left: 200%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container-10:hover .tooltip-10 {
+    top: -100%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .tooltip-container-11:hover .tooltip-11 {
+    top: -100%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+    </style>
+</head>
+<body>
+    <div class="container-title">
+    <center><h1 id="text-title">Parroquia Ntra. Sra. Del Rosario</h1></center>
+        <img src="https://scontent.ffdo2-1.fna.fbcdn.net/v/t39.30808-6/383091335_7439164666110704_3694151949689544542_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_eui2=AeEe86Raa3pAisvf9BGNGg9-O06qTJ706Ic7TqpMnvTohwkkpjEUuu12BX5M0CFrM0GciB-AHdN6h4kwZcDUp4Oq&_nc_ohc=JOAybGaPqP0Q7kNvgHGq0A1&_nc_ht=scontent.ffdo2-1.fna&oh=00_AYC2R5fvfIxEliO73ZJRnhdOFZpsQf_iokNeKSTw85tkEg&oe=66CC1F9C" alt="" width="150" height="190" class="img-rosario">
+        <div class="container-complet">
+            <div class="tooltip-container">
+              <span class="tooltip-1">
+                <h1>Turibulo: Adrian (Seminarista). <br>
+                Naveta: Joaco (Monaguillo). <br>
+                Cruz: Bruno (Monaguiilo). <br>
+                Candelabros: <br>
+                Evangelio: <br>
+                Monaguiilos. <br>
+                Diaconos. <br>
+                Sacerdotes. <br>
+                Obispo. <br>
+                Mitra y Baculo.</h1></span>
+            
+                <span><h1 class="h1-texto">Procesión de entrada:</h1></span>
+                </div>
+            
+            
+                <div class="tooltip-container-2">
+              <span class="tooltip-2">
+                <h1>
+                   Se le lleva la Mitra: <br>
+                   1ra Lectura: Lourdes (Catequesis). <br>
+                   Salmo: Miguel Angel Muñoz (Coro)<br>
+                   2da Lectura:  <br>
+                   Se retira la Mitra: <br>
+                   Evangelio: Parroco Cristian Guida <h3>(si hay diacono, lo hace un diacono)</h3></h1><br></span>
+            
+                   <span><h1 class="h1-texto">Liturgia de la Palabra</h1></span>
+                   </div>
+            
+            
+                <div class="tooltip-container-3">
+                <span class="tooltip-3"><h3>como de costumbre (no hay oracion de los fieles, se remplaza por las Letanias)</h3></span>
+            
+                <span><h1 class="h1-texto">Homilia, Credo y Letanias.<br></h1></span> 
+                </div>
+            
+            <div class="tooltip-container-4">
+                <span class="tooltip-4">
+                    <h1>
+                     Mitra: <br>
+                     Llevar Reliquias: Pbro. <br>
+                     Velas: <br>
+                     Vela 1: <br>
+                     Vela 2: <br>
+                     <h3>al terminar se retira la Mitra</h3>
+                    </h1>
+                     <br>
+             
+                     <h2>Uncion:</h2>
+                     
+                    <h1>
+                     Monaguillos: <br>
+                     El que se lleva casulla: Esteban (Americas)<br>
+                     El que trae el gremial: <br>
+                     El que trae el crisma: <br>
+                     EL que trae la Mitra: <br>
+                    </h1>
+                     
+                     <h3>despues de que termina la Uncion</h3>
+             
+                     <h1>
+                     Se lleva el crisma: <br>
+                     Se lleva el gremial: <br>
+                     Se trae un lavabo para el obsipo: <br>
+                     Se trae la casulla: Esteban (Americas)<br>
+                     El que le lleva la Mitra: <br>
+                     
+                     </h1>
+            
+                </span><h1 class="h1-texto">Colocacion de las Reliquias<br></h1></span>
+            </div>
+            <div class="tooltip-container-5">
+                <span class="tooltip-5"> 
+            
+                    <h1>Brasero: Seba Ministro extraordinario <br>
+                        Turibulo: Adrian (Seminarista)<br>
+                        Naveta: Joaco Monaguillo <br></h1>
+            
+                    <h2>Revestimiento del Altar:</h2>
+            
+                    <h3>se seca el altar con toallas.</h3>
+                    <h1>Rosario y Rosa Acosta. </h1><br>
+                    
+                    <h3>se reviste el altar.</h3>
+                    <h1>Rosa Celan y Amalia.</h1> <br>
+            
+                    <h2>Colocación de iluminación del altar:</h2>
+                    <h3>Candelabros y Cruz</h3>
+                    <h1>
+                    Monaguiilo que lleva Candelabro: <br>
+                    Monaguiilo que lleva Candelabro: <br>
+                    Monaguiilo que lleva Candelabro: <br>
+                    Monaguiilo que lleva Candelabro: Joaco<br>
+                    Monaguiilo que lleva Cruz: Adrian (Seminarista)<br>
+                    Monaguiilo que lleva Candelabro: Esteban (Americas)<br>
+                    Monaguiilo que llava Candelabro: <br>
+                    Monaguiilo que lleva Candelabro: <br> </h1></span>
+            
+                <span><h1 class="h1-texto">Incensacion del Altar</h1></span> 
+                </div>
+            
+                <div class="tooltip-container-6">
+                    <span class="tooltip-6">
+                        <h1>Pbro.</h1></span>
+                
+                    <span><h1 class="h1-texto">iluminación del Altar</h1></span> 
+                    </div>
+                    
+                    <div class="tooltip-container-7">
+                        <span class="tooltip-7"> <h3>la misa continua como es de costumbre.</h3></span>
+                    
+                        <span><h1 class="h1-texto">Misa<br></h1></span> 
+                        </div>
+            
+                        <div class="tooltip-container-8">
+                            <span class="tooltip-8"><h3>se lleva pan y vino</h3>
+                                <h1>Niñas de catequesis que participan de la comunidad. <br>
+                                    Pan: <br>
+                                    Vino: <br>
+                                </h1></span>
+                        
+                            <span><h1 class="h1-texto">Ofrendas<br></h1></span> 
+                            </div>
+            
+                            <div class="tooltip-container-9">
+                                <span class="tooltip-9">
+                                    <h1>Legionarias. <br>
+                                        (nombre de la persona): Bolsa 1. <br>
+                                        (nombre de la persona): Bolsa 2. <br>
+                                        (nombre de la persona): Bolsa 3. <br>
+                                        (nombre de la persona): Bolsa 4. <br>
+                                        (nombre de la persona): Bolsa 5. <br>
+                                        (nombre de la persona): Bolsa 6. <br>
+                                        </h1></span>
+                            
+                                <span><h1 class="h1-texto">Colecta</h1></span> 
+                                </div>
+            
+            
+                                <div class="tooltip-container-10">
+                                    <span class="tooltip-10">
+                                        <h1>Monica CDI</h1></span>
+                                
+                                    <span><h1 class="h1-texto">Guia</h1></span> 
+                                    </div>
+            
+                                    <div class="tooltip-container-11">
+                                        <span class="tooltip-11">
+                                            <h1>Coro de los Domingos</h1></span>
+                                    
+                                        <span><h1 class="h1-texto">Servicio Musical</h1></span> 
+                                        </div>
+            </div>
+                <h4>Tenes dudas? Consultale al Maestro de Celebraciones 
+        <a href="https://wa.me/5491159078310?text" target="_blank">Click aqui.</a></h4>
+</body>
+</html>
